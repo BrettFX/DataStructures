@@ -1,9 +1,14 @@
+/*
+Reference: https://articles.leetcode.com/how-to-pretty-print-binary-tree/ 
+*/
+
 #include <fstream>
 #include <iostream>
 #include <deque>
 #include <iomanip>
 #include <sstream>
 #include <string>
+#include <cmath>
 using namespace std;
 
 struct BinaryTree {
@@ -112,11 +117,11 @@ int main() {
   // Output to console
   printPretty(root, 1, 0, cout);
 
-  cout << "\n\nTree pretty print with level=5 and indentSpace=3,\noutput to file \"tree_pretty.txt\".\n\n";
-  // Create a file and output to that file
-  ofstream fout("tree_pretty.txt");
-  // Now print a tree that's more spread out to the file
-  printPretty(root, 5, 0, fout);
+  // cout << "\n\nTree pretty print with level=5 and indentSpace=3,\noutput to file \"tree_pretty.txt\".\n\n";
+  // // Create a file and output to that file
+  // ofstream fout("C:/Temp/tree_pretty.txt");
+  // // Now print a tree that's more spread out to the file
+  // printPretty(root, 5, 0, fout);
 
   return 0;
 }
