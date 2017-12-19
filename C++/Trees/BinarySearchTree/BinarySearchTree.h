@@ -28,11 +28,29 @@ public:
 		Overloaded assignment operator
 		*/
 		const Node& operator=(const Node& rhs);
+		
+		/*
+		Get the data
+		Runs in constant time
+		*/
+		int data() const;
+		
+		/*
+		Get the left child
+		Runs in constant time
+		*/
+		Node* left() const;
+		
+		/*
+		Gets the right child
+		Runs in constant time
+		*/
+		Node* right() const;
 	
 	private:
-		int data;
-		Node* leftChild;
-		Node* rightChild;
+		int m_data;
+		Node* m_leftChild;
+		Node* m_rightChild;
 		
 	};
 	
@@ -56,7 +74,7 @@ public:
 	Bootstrap function
 	Runs in constant time
 	*/
-	void insert();
+	void insert(int data);
 	
 	/*
 	Insert a node into the binary search tree.
@@ -67,9 +85,17 @@ public:
 	
 	/*
 	Displays an inorder walk of the tree
-	Runs in O(logn) time
+	Bootstrap function
+	Runs in constant time
 	*/
 	void dump();
+	
+	/*
+	Displays an inorder walk of the tree
+	Bootstrap function
+	Runs in O(logn) time
+	*/
+	void dump(Node* n);
 	
 	/*
 	Overloaded assignment operator
@@ -77,7 +103,8 @@ public:
 	const BinarySearchTree& operator=(const BinarySearchTree& rhs);
 
 private:
-	Node* root;
+	Node* m_root;
+	int m_size;
 	
 };
 
