@@ -25,3 +25,4 @@ output.txt
 *.tga
 *.tiff
 *.wmf
+.DS_Store
