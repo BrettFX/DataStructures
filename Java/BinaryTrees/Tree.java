@@ -1,4 +1,4 @@
-package trees;
+package trees.components;
 
 public abstract class Tree {
 	protected Node m_root;

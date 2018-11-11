@@ -3,7 +3,7 @@ package datastructures;
 import java.util.Random;
 
 import trees.BinarySearchTree;
-import trees.Tree;
+import trees.components.Tree;
 
 public class Driver {
 	public static void main(String[] args) {

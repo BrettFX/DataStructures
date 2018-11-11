@@ -1,5 +1,8 @@
 package trees;
 
+import trees.components.Node;
+import trees.components.Tree;
+
 public class BinarySearchTree extends Tree {
 	
 	public BinarySearchTree() {

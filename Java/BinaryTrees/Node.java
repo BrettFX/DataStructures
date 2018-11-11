@@ -1,4 +1,4 @@
-package trees;
+package trees.components;
 
 public class Node {
 	private int m_data;
